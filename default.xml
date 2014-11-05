@@ -27,7 +27,7 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
-  <project path="manifest" name="manifest" remote="pixel" revision="kk" />
+ <project path="manifest" name="manifest" remote="pixel" revision="kk" />
 
   <project path="abi/cpp" name="android_abi_cpp" groups="pdk" />
   <project path="art" name="android_art" />
@@ -300,7 +300,7 @@
   <project path="external/zlib" name="android_external_zlib" groups="pdk" />
   <project path="external/zxing" name="android_external_zxing" />
   <project path="frameworks/av" name="android_frameworks_av" groups="pdk" />
-  <project path="frameworks/base" name="frameworks_base" remote="pixel" revision="kk" />
+  <project path="frameworks/base" name="frameworks_base" remote="pixel" revision="kk2" />
   <project path="frameworks/compile/libbcc" name="android_frameworks_compile_libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="android_frameworks_compile_mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="android_frameworks_compile_slang" groups="pdk" />
@@ -375,25 +375,26 @@
   <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" />
   <project path="packages/apps/ContactsCommon" name="android_packages_apps_ContactsCommon" />
   <project path="packages/apps/DeskClock" name="android_packages_apps_DeskClock" />
-  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" />
-  <project path="packages/apps/DSPManager" name="android_packages_apps_DSPManager" />
+  <project path="packages/apps/Dialer" remote="github" name="cristianomatos/android_packages_apps_Dialer" />
+  <project path="packages/apps/DSPManager" name="cristianomatos/android_packages_apps_DSPManager" remote="github" />
   <project path="packages/apps/Email" name="android_packages_apps_Email" />
   <project path="packages/apps/Exchange" name="android_packages_apps_Exchange" />
   <project path="packages/apps/Gallery2" name="android_packages_apps_Gallery2" />
   <project path="packages/apps/HTMLViewer" name="android_packages_apps_HTMLViewer" />
-  <project path="packages/apps/InCallUI" name="android_packages_apps_InCallUI" />
+  <project path="packages/apps/InCallUI" name="cristianomatos/android_packages_apps_InCallUI" remote="github" />
   <project path="packages/apps/KeyChain" name="android_packages_apps_KeyChain" />
   <project path="packages/apps/LockClock" name="android_packages_apps_LockClock" />
-  <project path="packages/apps/Mms" name="android_packages_apps_Mms" />
+  <project path="packages/apps/Mms" name="cristianomatos/android_packages_apps_Mms" remote="github" />
   <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" />
   <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller" />
   <project path="packages/apps/PhoneCommon" name="android_packages_apps_PhoneCommon" />
   <project path="packages/apps/Provision" name="android_packages_apps_Provision" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="pixel" revision="kk" />
+  <project path="packages/apps/Settings" remote="pixel" name="packages_apps_Settings" revision="kk2" />
   <project path="packages/apps/SmartCardService" name="android_packages_apps_SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="android_packages_apps_SoundRecorder" />
   <project path="packages/apps/SpeechRecorder" name="android_packages_apps_SpeechRecorder" />
+  <project path="packages/apps/SreenRecorder" name="cristianomatos/android_packages_apps_ScreenRecorder" remote="github" />
   <project path="packages/apps/Stk" name="android_packages_apps_Stk" />
   <project path="packages/apps/Tag" name="android_packages_apps_Tag" />
   <project path="packages/apps/ThemeChooser" name="android_packages_apps_ThemeChooser" />
@@ -410,8 +411,8 @@
   <project path="packages/providers/ApplicationsProvider" name="android_packages_providers_ApplicationsProvider" />
   <project path="packages/providers/CalendarProvider" name="android_packages_providers_CalendarProvider" />
   <project path="packages/providers/ContactsProvider" name="android_packages_providers_ContactsProvider" />
-  <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" />
-  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" />
+  <project path="packages/providers/DownloadProvider" name="cristianomatos/android_packages_providers_DownloadProvider" remote="github" />
+  <project path="packages/providers/MediaProvider" name="cristianomatos/android_packages_providers_MediaProvider" remote="github" />
   <project path="packages/providers/PartnerBookmarksProvider" name="android_packages_providers_PartnerBookmarksProvider" />
   <project path="packages/providers/TelephonyProvider" name="android_packages_providers_TelephonyProvider" />
   <project path="packages/providers/ThemesProvider" name="android_packages_providers_ThemesProvider" />
@@ -419,7 +420,7 @@
   <project path="packages/screensavers/Basic" name="android_packages_screensavers_Basic" />
   <project path="packages/screensavers/PhotoTable" name="android_packages_screensavers_PhotoTable" />
   <project path="packages/screensavers/WebView" name="android_packages_screensavers_WebView" />
-  <project path="packages/services/Telephony" name="android_packages_services_Telephony" />
+  <project path="packages/services/Telephony" name="cristianomatos/android_packages_services_Telephony" remote="github" />
   <project path="packages/wallpapers/Basic" name="android_packages_wallpapers_Basic" />
   <project path="packages/wallpapers/Galaxy4" name="android_packages_wallpapers_Galaxy4" />
   <project path="packages/wallpapers/HoloSpiral" name="android_packages_wallpapers_HoloSpiral" />
@@ -479,7 +480,7 @@
   <project path="sdk" name="android_sdk" />
   <project path="system/core" name="android_system_core" groups="pdk" />
   <project path="system/extras" name="android_system_extras" groups="pdk" />
-  <project path="system/media" name="android_system_media" groups="pdk" />
+  <project path="system/media" name="cristianomatos/android_system_media" groups="pdk" remote="github" />
   <project path="system/netd" name="android_system_netd" groups="pdk" />
   <project path="system/qcom" name="android_system_qcom" groups="qcom" />
   <project path="system/security" name="android_system_security" groups="pdk" />
@@ -494,6 +495,6 @@
   <project path="tools/idea" name="platform/tools/idea" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
-  <project path="vendor/pixel" name="vendor_pixel" remote="pixel" revision="kk" />
+  <project path="vendor/pixel" remote="pixel" name="vendor_pixel" revision="kk" />
   <project path="vendor/cyngn" name="cyngn/android_vendor_cyngn" remote="github" />
 </manifest>
